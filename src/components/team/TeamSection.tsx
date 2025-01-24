@@ -1,7 +1,7 @@
 import { devsData } from "../../constants";
 import DevCard from "./DevCard";
 
-export default function ProfileSection() {
+export default function Team() {
   return (
     <div>
       <h2 className="text-4xl font-bold text-center mb-4 ">ForgeBytes Team</h2>

@@ -13,7 +13,7 @@ export default function DevCard(devData: DevCardProps) {
     >
       <img
         src={devData.avatar}
-        alt="Avatar"
+        alt={devData.description}
         className="w-24 h-24 mx-auto rounded-full mb-4"
       />
       <h2 className="text-xl font-semibold dark:text-stone-500">
