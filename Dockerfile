@@ -24,4 +24,4 @@ RUN pnpm build
 EXPOSE 4001
 
 # Comando para ejecutar Vite en modo preview
-CMD ["pnpm", "preview", "--", "--host", "0.0.0.0", "--port", "4001"]
+CMD ["pnpm", "preview"]
