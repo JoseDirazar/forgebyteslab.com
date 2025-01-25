@@ -5,12 +5,9 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      {/* <img src={backgroundImage} className="absolute inset-0" /> */}
-      <div className="">
-        <Navbar />
-        <LandingPage />
-        <Footer />
-      </div>
+      <Navbar />
+      <LandingPage />
+      <Footer />
     </>
   );
 }
