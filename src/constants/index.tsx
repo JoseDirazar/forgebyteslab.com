@@ -1,4 +1,8 @@
-import { AiOutlineTeam, AiOutlineInfo, AiOutlineHome } from "react-icons/ai";
+import {
+  AiOutlineTeam,
+  AiOutlineHome,
+  AiOutlineInfoCircle,
+} from "react-icons/ai";
 
 export const devsData = [
   {
@@ -25,6 +29,6 @@ export const navbarLinks = [
   {
     name: "About",
     href: "#about",
-    icon: AiOutlineInfo,
+    icon: AiOutlineInfoCircle,
   },
 ] as const;
