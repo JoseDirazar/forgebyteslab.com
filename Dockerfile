@@ -12,7 +12,7 @@ COPY pnpm-lock.yaml ./
 COPY package.json ./
 
 # Instalar dependencias
-RUN pnpm install --frozen-lockfile --prod
+RUN pnpm install --frozen-lockfile
 
 # Copiar el resto de los archivos
 COPY . .
