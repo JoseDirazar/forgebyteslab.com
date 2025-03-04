@@ -1,13 +1,9 @@
-type DevCardProps = {
-  name: string;
-  role: string;
-  description: string;
-  avatar: string;
-};
+import { DevCardProps } from "../../constants";
 
 export default function DevCard(devData: DevCardProps) {
   return (
-    <div
+    <a
+      href={devData.href}
       id="#team"
       className="max-w-sm bg-white dark:bg-neutral-700/50 p-6 rounded-xl shadow-lg text-center"
     >
@@ -21,6 +17,6 @@ export default function DevCard(devData: DevCardProps) {
       </h2>
       <p className="text-gray-500 dark:text-gray-400 mb-4">{devData.role}</p>
       <p className="text-gray-700 dark:text-white">{devData.description}</p>
-    </div>
+    </a>
   );
 }

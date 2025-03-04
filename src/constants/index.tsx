@@ -3,6 +3,13 @@ import {
   AiOutlineHome,
   AiOutlineInfoCircle,
 } from "react-icons/ai";
+export type DevCardProps = {
+  name: string;
+  role: string;
+  description: string;
+  avatar: string;
+  href: string;
+};
 
 export const devsData = [
   {
@@ -11,8 +18,9 @@ export const devsData = [
     description:
       "I am a passionate software developer dedicated to transforming client's ideas into reliable, efficient, and high-quality software.",
     avatar: "photo.jpeg",
+    href: "https://jose-dirazar.forgebyteslab.com",
   },
-] as const;
+] satisfies DevCardProps[];
 
 export const navbarLinks = [
   {
