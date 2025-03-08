@@ -1,12 +1,9 @@
+import { FaArrowCircleRight } from "react-icons/fa";
 import { DevCardProps } from "../../constants";
 
 export default function DevCard(devData: DevCardProps) {
   return (
-    <a
-      href={devData.href}
-      id="#team"
-      className="max-w-sm bg-white dark:bg-neutral-700/50 p-6 rounded-xl shadow-lg text-center"
-    >
+    <div className="max-w-sm bg-white dark:bg-neutral-700/50 p-6 rounded-xl shadow-lg text-center">
       <img
         src={devData.avatar}
         alt={devData.description}
@@ -16,7 +13,16 @@ export default function DevCard(devData: DevCardProps) {
         {devData.name}
       </h2>
       <p className="text-gray-500 dark:text-gray-400 mb-4">{devData.role}</p>
-      <p className="text-gray-700 dark:text-white">{devData.description}</p>
-    </a>
+      <p className="text-gray-700 dark:text-white mb-6">
+        {devData.description}
+      </p>
+      <a
+        href={devData.href}
+        className="bg-stone-600 px-3 py-2 rounded font-bold flex items-center justify-center gap-x-3"
+      >
+        Profile
+        <FaArrowCircleRight size={23} />
+      </a>
+    </div>
   );
 }

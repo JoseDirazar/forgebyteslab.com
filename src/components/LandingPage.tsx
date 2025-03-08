@@ -21,9 +21,9 @@ export default function LandingPage() {
         <GoAlert size={50} />
         <p>Site in progress...</p>
       </div>
-      <div id="about">
+      {/* <div id="about">
         <h2 className="text-4xl font-bold text-center mb-4">About</h2>
-      </div>
+      </div> */}
     </div>
   );
 }
